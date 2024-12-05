@@ -1,0 +1,34 @@
+.textarea {
+  width: 100%;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 2px solid var(--text-secondary);
+  padding: 15px 25px;
+  border-radius: 7px;  
+  outline: none;
+  resize: none;
+
+  &:focus  {
+    outline: 3px solid var(--text-primary);
+  }
+
+  @media(width < 1280px) {
+    padding: 8px 13px;
+    font: var(--font-m-mobile);
+    border: 1px solid var(--text-secondary);
+
+    &:focus  {
+      outline: 2px solid var(--text-primary);
+    }
+  } 
+
+  &::placeholder {
+    display: none;
+
+    @media(width < 1280px) {
+      color: var(--text-secondary);;
+      font: var(--font-m-mobile);
+      font-weight: 400;
+    }
+  }
+}

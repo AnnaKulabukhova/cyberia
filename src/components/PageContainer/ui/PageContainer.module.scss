@@ -1,0 +1,21 @@
+.pageContainer {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 18px 100px;
+  margin: 0 auto;
+
+  @media (width < 1280px) {
+    padding: 0;
+    padding-bottom: 0;
+    padding-top: 46px;
+    background: var(--light-background);
+  }
+}
+
+.breadcrumbs {
+  margin-bottom: 130px;
+
+    @media (width < 1280px) {
+      margin-bottom: 30px;
+  }
+}

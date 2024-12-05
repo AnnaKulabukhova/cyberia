@@ -1,0 +1,9 @@
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+
+  @media(width <=600px) {
+    gap: 0;
+  }
+}

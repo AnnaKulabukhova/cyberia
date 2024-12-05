@@ -1,0 +1,130 @@
+:root {
+  /* Цвета */
+  --light-background: #313341;;
+  --background: #24252F;
+  --text-primary: #FFF;
+  --text-secondary : #EEF3FF;
+  --text-gray : #9AA8BA;
+  --separator : #2B2D3A;
+  --shadow: #171B2C;
+  --accent: #2D76F9;
+  --active-link: #C4D2E3;
+  --error: #f92d2d;
+
+  /* Шрифты */
+  --font-fira-sans: 'firasans', "firaSans Fallback";
+  --font-rubik: "rubik", "rubik Fallback";
+  --font-open-sans: "open-sans", "openSans Fallback";
+
+  /* s desktop */
+  --font-size-s-desktop: 18px;
+  --font-line-s-desktop: 22px;
+  --font-s-desktop: var(--font-size-s-desktop) / var(--font-line-s-desktop) var(--font-fira-sans);
+
+  /* m desktop */
+  --font-size-m-desktop: 24px;
+  --font-line-m-desktop: 28px;
+  --font-m-desktop: var(--font-size-m-desktop) / var(--font-line-m-desktop) var(--font-fira-sans);
+
+  /* l desktop */
+  --font-size-l-desktop: 48px;
+  --font-line-l-desktop: 58px;
+  --font-l-desktop: var(--font-size-l-desktop) / var(--font-line-l-desktop) var(--font-fira-sans);
+
+  /* xs mobile */
+  --font-size-xs-mobile: 12px;
+  --font-line-xs-mobile: 14px;
+  --font-xs-mobile: var(--font-size-xs-mobile) / var(--font-line-xs-mobile) var(--font-rubik);
+
+  /* s mobile */
+  --font-size-s-mobile: 12px;
+  --font-line-s-mobile: 16px;
+  --font-s-mobile: var(--font-size-s-mobile) / var(--font-line-s-mobile) var(--font-open-sans);
+
+  /* m mobile */
+  --font-size-m-mobile: 13px;
+  --font-line-m-mobile: 18px;
+  --font-m-mobile: var(--font-size-m-mobile) / var(--font-line-m-mobile) var(--font-open-sans);
+
+  /* l mobile */
+  --font-size-l-mobile: 16px;
+  --font-line-l-mobile: 22px;
+  --font-l-mobile: var(--font-size-l-mobile) / var(--font-line-l-mobile) var(--font-open-sans);
+
+  /* xl mobile */
+  --font-size-xl-mobile: 18px;
+  --font-line-xl-mobile: 22px;
+  --font-xl-mobile: var(--font-size-xl-mobile) / var(--font-line-xl-mobile) var(--font-rubik);
+
+  /* xxl mobile */
+  --font-size-xxl-mobile: 18px;
+  --font-line-xxl-mobile: 24px;
+  --font-xxl-mobile: var(--font-size-xxl-mobile) / var(--font-line-xxl-mobile) var(--font-open-sans);
+
+  /* l header mobile */
+  --font-size-l-header-mobile: 21px;
+  --font-line-l-header-mobile: 25px;
+  --font-l-header-mobile: var( --font-size-l-header-mobile) / var(--font-line-l-header-mobile) var(--font-rubik);
+
+  /* xl header mobile */
+  --font-size-xl-header-mobile: 24px;
+  --font-line-xl-header-mobile: 28px;
+  --font-xl-header-mobile: var(--font-size-xl-header-mobile) / var(--font-line-xl-header-mobile) var(--font-rubik);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+} 
+
+body {
+  display: grid; 
+  grid-template-rows: min-content 1fr min-content; 
+  min-height: 100vh;
+  color: var(--text-primary);
+  background: var(--background);
+  font: var(--font-s-desktop);
+} 
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header,
+.main,
+.footer {
+  width: 100%;
+}
+
+.footer { 
+  background: var(--light-background);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 8px; 
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--light-background) 
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--text-secondary);   
+  border-radius: 20px;
+}

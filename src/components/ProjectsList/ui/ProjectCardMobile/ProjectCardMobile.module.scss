@@ -1,0 +1,44 @@
+.projectCard {
+  position: relative;
+  width: 327px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0;
+  
+  @media(width <= 600px) {
+    margin-bottom: 20px;
+  }
+}
+
+.image {
+  width: 327px;
+  height: 320px;
+}  
+
+.info {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 23px 29px;
+  background-image: linear-gradient(rgb(49 51 65 / 0%) 0%, #090B21 100%);
+}
+
+.icon {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 7px;
+}
+
+
+.title {
+  margin-bottom: 6px;
+  font: var(--font-xl-mobile);
+  font-weight: 500;
+}
+
+.description {
+  font: var(--font-m-mobile);
+  font-weight: 400;
+}

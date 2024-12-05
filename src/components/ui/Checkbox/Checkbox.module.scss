@@ -1,0 +1,46 @@
+.label {
+  display: flex;
+  cursor: pointer;
+}
+
+.input {
+  	visibility: hidden;
+}
+
+.buttonContainer {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid var(--text-primary);
+  border-radius: 2px;
+}
+
+.label:hover > .buttonContainer {
+ border: 1px solid var(--accent);
+}
+
+.labelText {
+  font-weight: 300;
+}
+
+.label:hover > .labelText {
+opacity: 0.8;
+}
+
+
+.input:checked + .buttonContainer {
+  background-color: var(--text-secondary);
+}
+
+.input:checked + .buttonContainer::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 17px;
+  height: 17px;
+  background-image: url("../../../../public/icons/check-mark.svg");
+  border-radius: 50%;
+}

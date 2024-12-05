@@ -1,0 +1,37 @@
+.button {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.filled {
+  padding: 20px 65px; 
+  color: var(--text-primary);
+  background-color: var(--accent);
+  border-radius: 85px;
+
+  &:hover {
+    outline: 1px solid var(--text-primary);
+  }
+
+  &:active {
+    background-color: transparent;
+    outline: 1px solid var(--text-primary);
+  }
+
+  @media (width < 1280px) {
+    padding: 15px;
+    font: var(--font-m-mobile);
+  }
+}
+
+.clear {
+  color: var(--text-primary);
+  font: inherit;
+  border:none;
+  background-color: transparent
+}
+
+.disabled {
+  opacity: 0.5;
+}

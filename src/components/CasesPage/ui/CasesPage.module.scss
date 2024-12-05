@@ -1,0 +1,12 @@
+.titlePage {
+  margin-bottom: 65px;
+  font: var(--font-l-desktop);
+  font-weight: 600;
+  color: var(--text-secondary);
+
+  @media (width < 1280px) {
+    padding: 0 18px;
+    font: var(--font-l-header-mobile);
+    font-weight: 500;
+  }
+}

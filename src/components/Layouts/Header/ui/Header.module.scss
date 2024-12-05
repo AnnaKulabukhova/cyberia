@@ -1,0 +1,25 @@
+.header {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+   @media (width < 1280px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.container {
+  width: 1280px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 191px;
+  margin: 0 auto
+
+}
+
+.navbar {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}

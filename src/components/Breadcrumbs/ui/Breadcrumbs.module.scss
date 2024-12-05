@@ -1,0 +1,38 @@
+.wrapper {
+  padding: 0;
+
+ @media (width < 1280px) {
+    padding: 0 18px;
+  }
+}
+
+.link {
+  color: var(--text-gray);
+ 
+  @media (width < 1280px) {
+    font: var(--font-xs-mobile);
+    font-weight: 300;
+  }
+
+  &:hover {
+    color: var(--accent)
+  }
+
+  &:active {
+    color: var(--accent);
+    opacity: 0.7;
+  }
+}
+
+.active {
+ color: var(--active-link);
+
+  &:hover {
+    color:  var(--active-link);
+  }
+
+  &:active {
+    color: var(--active-link);
+    opacity: 1;
+  }
+}
